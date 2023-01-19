@@ -1,0 +1,7 @@
+<div class="container mx-auto mt-5 p-3 col-md-5 offset-md-4 border border-info text-center">
+    <h2 class="text-dark">Lista de Usuarios</h2>
+    <button type="button" class="btn btn-danger" (click)="getUsers()" >Mostrar Usuarios</button>
+    <ul class="product-container my-3" *ngFor="let user of users">
+        <li class="title">{{ user.name }}</li>
+    </ul>
+</div>
